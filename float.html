@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Float</title>
+	<style>
+		.logo {
+			float: left;	
+			width: 100px;
+			margin: 0 1em 1em 1em;
+		}
+
+		.logo2 {
+			float: right;	
+			width: 125px;
+			margin: 0 1em 1em 1em;
+		}
+
+		.clear-right {
+			clear: right;
+		}
+
+		.clear-left {
+			clear: left;
+		}
+
+		.clear-none {
+			clear: none;
+		}
+
+		.elem-red {
+			border: 2px solid red;
+		}
+
+		.elem-blue {
+			border: 2px solid blue;
+		}
+
+		.elem-orange {
+			border: 2px solid orange;
+		}
+
+		.elem-green {
+			border: 2px solid green;
+		}
+
+		.clearfix {
+			overflow: auto;
+		}		
+		
+		nav {
+ 			float: left;
+ 			width: 200px;
+		}
+		
+		section {
+  			margin-left: 200px;
+		}
+
+		.box {
+			float: left;
+ 			width: 33%;
+ 			height: 100px;
+ 			
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+	<p class="content ipsum">
+		<img class="logo" src="css_logo.png" alt="An Image">
+		  CSS nos prové de propiedades para el posicionamiento de los elementos, por ejemplo float, con float podemos "flotar" elementos como queramos para establecer la estructura de nuestro diseño
+	</p>
+
+	<div class="clear-left">
+    	<p>Usamos la propiedad clear para despejar elementos que están flotando</p>
+ 	</div>
+
+	<br><hr>
+
+	
+	<div>
+		<img class="logo2"src="logo2.png" alt="An Image">
+		<p>
+	      Esta imagen está flotando, al ser más alta que el elemento que la contiene, se sale de su contenedor
+	    </p>
+	</div>	
+
+	<br><br><br><br><br><hr>
+
+	<div class="elem-blue">  
+  		<nav class="elem-red">
+    		<ul>
+      			<li><a href="#">Inicio</a></li>
+      			<li><a href="#">Item 2</a></li>
+      			<li><a href="#">Item 3</a></li>
+      			<li><a href="#">Item 4</a></li>
+      			<li><a href="#">Contacto</a></li>
+		    </ul>
+		</nav>
+
+		<section class="elem-green">
+    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, 
+    		</p>
+    	</section>
+
+		<section class="elem-green">
+    		<p>
+		      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+		    </p>
+    	</section>
+	</div>
+
+	
+
+	<br><br><br><br><br><br><br><br>
+
+	<div class="box elem-red">
+      <p>
+        Apilando cajas
+      </p>
+    </div>
+
+	<div class="box elem-blue">
+      <p>
+        Apilando cajas
+      </p>
+    </div>
+
+	<div class="box elem-red">
+      <p>
+        Apilando cajas
+      </p>
+    </div>
+
+	<div class="box elem-blue">
+      <p>
+        Apilando cajas
+      </p>
+    </div>
+
+	<div class="box elem-red">
+      <p>
+        Apilando cajas
+      </p>
+    </div>
+
+	<div class="box elem-blue">
+      <p>
+        Apilando cajas
+      </p>
+    </div>
+
+	<div class="elem-orange clear-left">
+    	<p>Usamos clear para no flotar arriba de las cajas</p>
+    </div>
+
+
+
+
+</body>
+</html>
